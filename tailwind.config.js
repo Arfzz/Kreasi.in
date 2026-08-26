@@ -1,0 +1,101 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  theme: {
+      extend: {
+          "colors": {
+              "on-tertiary-container": "#00b779",
+              "primary-container": "#4b1b7d",
+              "surface": "#f9f9f9",
+              "inverse-surface": "#303030",
+              "surface-dim": "#dadada",
+              "on-surface": "#1b1b1b",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed": "#6afcb7",
+              "surface-container-low": "#f3f3f3",
+              "surface-container-highest": "#e2e2e2",
+              "surface-soft": "#FDEDEC",
+              "inverse-on-surface": "#f1f1f1",
+              "background": "#f9f9f9",
+              "tertiary-container": "#004028",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed-dim": "#48df9d",
+              "outline": "#7c7482",
+              "on-secondary-container": "#766321",
+              "background-main": "#FFFFFF",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed": "#efdbff",
+              "secondary-container": "#F5D60C",
+              "surface-tint": "#7548a8",
+              "on-secondary-fixed-variant": "#564503",
+              "tertiary": "#002817",
+              "stroke-bold": "#000000",
+              "on-error": "#ffffff",
+              "surface-bright": "#f9f9f9",
+              "primary": "#330060",
+              "error-container": "#ffdad6",
+              "secondary-fixed-dim": "#dec579",
+              "on-primary-fixed": "#2b0053",
+              "surface-variant": "#e2e2e2",
+              "secondary": "#705d1b",
+              "on-secondary-fixed": "#231b00",
+              "secondary-fixed": "#F5D60C",
+              "surface-container-high": "#e8e8e8",
+              "on-surface-variant": "#4b4451",
+              "on-tertiary-fixed-variant": "#005234",
+              "on-primary-fixed-variant": "#5c2e8e",
+              "on-error-container": "#93000a",
+              "on-background": "#1b1b1b",
+              "on-primary": "#ffffff",
+              "on-primary-container": "#ba8af0",
+              "primary-fixed-dim": "#dbb8ff",
+              "outline-variant": "#cdc3d2",
+              "surface-container": "#eeeeee",
+              "on-tertiary-fixed": "#002112",
+              "inverse-primary": "#dbb8ff",
+              "error": "#ba1a1a"
+          },
+          "borderRadius": {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+          },
+          "spacing": {
+              "border-width": "4px",
+              "grid-margin": "2rem",
+              "shadow-offset": "8px",
+              "section-padding": "5rem",
+              "gutter": "1.5rem"
+          },
+          "fontFamily": {
+              "headline-md": ["Montserrat"],
+              "body-md": ["Work Sans"],
+              "label-mono": ["JetBrains Mono"],
+              "body-lg": ["Work Sans"],
+              "headline-lg": ["Montserrat"],
+              "headline-lg-mobile": ["Montserrat"],
+              "display-xl": ["Montserrat"],
+              "button-text": ["Montserrat"]
+          },
+          "fontSize": {
+              "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+              "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+              "label-mono": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+              "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+              "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+              "headline-lg-mobile": ["32px", { "lineHeight": "38px", "fontWeight": "800" }],
+              "display-xl": ["80px", { "lineHeight": "88px", "letterSpacing": "-0.04em", "fontWeight": "900" }],
+              "button-text": ["16px", { "lineHeight": "20px", "fontWeight": "700" }]
+          }
+      }
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/container-queries'),
+  ],
+}
